@@ -69,7 +69,7 @@ cargo run -p attestation_verifier -- polygon \
   --attestation att.json \
   --polygon polygon.json
 # Output: signature_ok: true, constraint: polygon, satisfied: true
-
+```
 
 ### Notes
 
