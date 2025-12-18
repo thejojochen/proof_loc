@@ -3,5 +3,6 @@ members = [
     "crates/attestation_types",
     "crates/attestation_mock_client",
     "crates/attestation_verifier",
+    "crates/location_proof",
 ]
 resolver = "2"
