@@ -2,12 +2,10 @@
 
 Zeroknowledge proof system for iOSstyle location attestations using [SP1](https://github.com/succinctlabs/sp1). Proves that a cryptographically signed location satisfies a constraint (bounding box, circle, or polygon) without revealing the exact coordinates.
 
-## Features
-
 - **PrivacyPreserving**: Exact coordinates never leave the zkVM; only constraint satisfaction is proven
-- **Cryptographic Verification**: P256 ECDSA signature verification inside the zkVM
-- **Flexible Constraints**: Bounding box, circular radius, or arbitrary polygon regions
-- **CommitmentBased**: Constraint parameters are hashed (SHA256) and committed in the proof
+- **Cryptographic Verification**: P256 ECDSA signature verification inside the zkVM (without precompile)
+- **Constraint Types**: Bounding box, circular radius, or arbitrary polygon regions
+- Constraint parameters are hashed (SHA256) and committed in the proof
 
 ## Quick Start
 
@@ -82,7 +80,7 @@ cargo run --release -- \
   --polygon-coords "406000000,-742000000,408000000,-742000000,408000000,-738000000,406000000,-738000000"
 ```
 
-## Project Structure
+## Crates Structure
 
 - **`crates/attestation_mock_client`**: CLI tool to generate mock signed attestations
 - **`crates/attestation_types`**: Shared types for attestations
