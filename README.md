@@ -12,7 +12,7 @@ Zeroknowledge proof system for iOSstyle location attestations using [SP1](https:
 ### Prerequisites
 
 - Rust (with `cargo`)
-- SP1 toolchain installed ([instructions](https://docs.succinct.xyz/getting-started/install.html))
+- SP1 toolchain installed ([instructions](https://docs.succinct.xyz/))
 
 ### 1. Generate a Mock Location Attestation
 
